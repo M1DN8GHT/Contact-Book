@@ -7,4 +7,8 @@
 # The AI then edited the code so that it met what was checked for. I plan on doing this for the rest of the required features.
 # the code wasn't opening a contacts.csv code so it closed and cleared some things and when I ran the code again, it opened up a contacts.csv
 # I asked the ai if it "Open and read multiple different contact books (this will require prompting the user which contact book they want to open)" and the ai added the missing code but the code didn't print what contact book you want to open. I need to make sure the code prompts "which contact book do you want to use with two options names "contacts1" and "contacts2" that is prompted after you choose an option.
+
+
+
+# Commit 3
 # I fixed the code so that instead of needing to type out the whole file name to select it you just have to type 1 or 2.
