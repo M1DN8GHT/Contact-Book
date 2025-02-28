@@ -13,17 +13,21 @@ for filename in ["contacts1.csv", "contacts2.csv"]:
         pass
 
 option = ""
-
+# This code gives the user a choice to read, write, append, or exit a contact book.
 while option != "4":
     print("Select an option: \n1. Read \n2. Write \n3. Append \n4. Exit")
     option = input(">> ")
 
     if option in ["1", "2", "3"]:
-        filename = input("Which contact book do you want to use (contacts1.csv or contacts2.csv): ")
-        if filename not in ["contacts1.csv", "contacts2.csv"]:
+        book_choice = input("Which contact book do you want to use (1 or 2): ")
+        if book_choice == "1":
+            filename = "contacts1.csv"
+        elif book_choice == "2":
+            filename = "contacts2.csv"
+        else:
             print("Invalid contact book selected.")
             continue
-
+# This code shows what happens after picking one of the options.
     if option == "1":
         try:
             with open(filename, "r", newline='') as f:
